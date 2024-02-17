@@ -54,28 +54,83 @@ namespace week02_task
             //}
             #endregion
             #region Week02-Hometask
-            //Ask for the input
-            Console.WriteLine("Please input a string: ");
-            string input_string = Console.ReadLine();
-            //Print out the result
-            Console.WriteLine($"{input_string} contains {space_count(input_string)} spaces");
-            //Function to count "spaces"
-            static int space_count (string input_string)
-            {
-                int number_of_spaces = 0;
-                //Loop to find "spaces"
-                for(int i = 0; i < input_string.Length; i++)
-                {
-                    
-                    if (input_string[i].Equals(' '))
-                    {
-                        number_of_spaces++;
-                    }
-                }
-                return number_of_spaces;
-            }
+            ////Ask for the input
+            //Console.WriteLine("Please input a string: ");
+            //string input_string = Console.ReadLine();
+            ////Print out the result
+            //Console.WriteLine($"{input_string} contains {space_count(input_string)} spaces");
+            //Console.WriteLine($"The type of our result is {space_count(input_string).GetType()}");
+            ////Function to count "spaces"
+            //static int space_count (string input_string)
+            //{
+            //    int number_of_spaces = 0;
+            //    //Loop to find "spaces"
+            //    for(int i = 0; i < input_string.Length; i++)
+            //    {
+
+            //        if (input_string[i].Equals(' '))
+            //        {
+            //            number_of_spaces++;
+            //        }
+            //    }
+            //    return number_of_spaces;
+            //}
             #endregion
-        }  
-            
+            #region Week02-02-1
+            ////Ask for the input
+            //Console.WriteLine("Please provide an input: ");
+            //var input = Console.ReadLine();
+            ////Output the result
+
+            //try
+            //{
+            //    Console.WriteLine($"{int.Parse(input)}");
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Please provide a valid input");
+
+            //}
+            #endregion
+            #region Week02-02-2
+            //int[] numbers = new int[5];
+            //for(int i = 0; i < numbers.Length; i++)
+            //{
+            //    numbers[i] = i + 1;
+            //    Console.WriteLine(numbers[i]);
+            //}
+            //foreach(int i in numbers)
+            //{
+            //    if(i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #region Week02-02-3
+            ////Ask the user for an input number
+            //Console.WriteLine("Please provide a number to divide by zero: ");
+            //int input_number = int.Parse(Console.ReadLine());
+            //int dividend = 0;
+            //int undefined;
+            //try
+            //{
+            //    undefined = input_number / dividend;
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //    undefined = input_number / 4;
+            //    Console.WriteLine(undefined);
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("You have been trying to divide by zero");
+            //}
+            #endregion
+            string[] letter = { "Turxay", "Perviz", "Cavid" };
+            Array.Sort(letter);
+            Console.WriteLine($"{Array.BinarySearch<>}");
+        }
+
     }
 }
